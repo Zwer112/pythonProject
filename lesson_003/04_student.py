@@ -12,3 +12,14 @@
 educational_grant, expenses = 10000, 12000
 
 # TODO здесь ваш код
+month = 1
+summa_rashod = 0
+while month <= 10:
+    if month == 1:
+        summa_rashod = summa_rashod + expenses
+    else:
+        expenses = expenses + expenses * 0.03
+        summa_rashod = summa_rashod + expenses
+    month += 1
+
+print('Проси', summa_rashod - (educational_grant*10))
