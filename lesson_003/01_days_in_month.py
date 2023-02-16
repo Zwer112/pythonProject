@@ -8,29 +8,33 @@
 
 # Номер месяца получать от пользователя следующим образом
 user_input = input("Введите, пожалуйста, номер месяца: ")
-month = int(user_input)
-print('Вы ввели', month)
+if user_input.isdigit():
+    month = int(user_input)
+    print('Вы ввели', month)
 
-if month == 1:
-    print('В этом месяце 31 день')
-elif month == 2:
-    print('В этом месяце 28 дней')
-elif month == 4:
-    print('В этом месяце 31 дней')
-elif month == 5:
-    print('В этом месяце 30 дней')
-elif month == 6:
-    print('В этом месяце 31 дней')
-elif month == 7:
-    print('В этом месяце 30 дней')
-elif month == 8:
-    print('В этом месяце 31 дней')
-elif month == 9:
-    print('В этом месяце 30 дней')
-elif month == 10:
-    print('В этом месяце 31 дней')
-elif month == 11:
-    print('В этом месяце 30 дней')
-elif month == 12:
-    print('В этом месяце 31 дней')
-else: print('Нет токого месяца')
+    if month == 1:
+        print('В этом месяце 31 день')
+    elif month == 2:
+        print('В этом месяце 28 дней')
+    elif month == 4:
+        print('В этом месяце 31 дней')
+    elif month == 5:
+        print('В этом месяце 30 дней')
+    elif month == 6:
+        print('В этом месяце 31 дней')
+    elif month == 7:
+        print('В этом месяце 30 дней')
+    elif month == 8:
+        print('В этом месяце 31 дней')
+    elif month == 9:
+        print('В этом месяце 30 дней')
+    elif month == 10:
+        print('В этом месяце 31 дней')
+    elif month == 11:
+        print('В этом месяце 30 дней')
+    elif month == 12:
+        print('В этом месяце 31 дней')
+    else:
+        print('Нет токого месяца')
+else:
+    print('нужна цифра')
