@@ -48,22 +48,19 @@ store = {
 
 # TODO здесь ваш код
 summa_all = 0
-for tovar in goods:
-    index_tovar = goods[tovar]
-    #print(index_tovar)
-    tovar_infa = store[index_tovar]
-    #print (tovar_infa)
+for index_tovar, tovar_infa in goods.items():
+   # print(index_tovar)
+   # print(tovar_infa)
     summa = 0
     quality = 0
 
-
-    for tovar_n in tovar_infa:
+    for tovar_n in store[tovar_infa]:
        # print(tovar_n['quantity'], tovar_n['price'])
         quality += tovar_n['quantity']
         summa += tovar_n['quantity']*tovar_n['price']
 
-    tovar_name = list(goods.keys())[list(goods.values()).index(index_tovar)]
-    print (tovar_name, 'в количестве', quality, 'на сумму', summa)
+    #tovar_name = list(goods.keys())[list(goods.values()).index(index_tovar)]
+    print (index_tovar, 'в количестве', quality, 'на сумму', summa)
     summa_all += summa
 print('Всего -', summa_all)
 
