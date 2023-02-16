@@ -15,7 +15,7 @@ def smile():
     sd.circle(center_position=point, radius=50, width=5)
     sd.circle(center_position=point_l, radius=5, width=1)
     sd.circle(center_position=point_r, radius=5, width=1)
-    sd.
+
 
 for _ in range(10):
     smile()
